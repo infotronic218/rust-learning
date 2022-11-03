@@ -1,5 +1,7 @@
-#[allow(dead_code)]
+
 use crate::factorial;
+
+#[allow(dead_code)]
 pub fn main(){
     println!("The ownership dans le temps ");
     let testing =  10 ;
