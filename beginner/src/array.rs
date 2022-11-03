@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn main(){
     let mut letters = ['a', 'b', 'c'];
     letters[0] = 'x' ;
@@ -23,4 +24,5 @@ pub fn main(){
 
     // Unpack the tuple content 
     let (a, b, c) = things ;
+    println!("{} {} {}", a, b, c );
 }

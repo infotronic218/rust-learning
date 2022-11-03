@@ -1,3 +1,5 @@
+
+#[allow(dead_code)]
 pub fn main(){
   println!("Binary testing ");
   let mut x = 0b1001_1001u8;

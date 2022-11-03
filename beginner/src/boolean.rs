@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn main(){
     let a  = true  ;
     let b  = false ;
