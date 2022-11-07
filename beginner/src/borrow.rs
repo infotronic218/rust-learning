@@ -5,6 +5,8 @@ pub fn main(){
   let mut text = String::from("Hello friend ");
   let length = to_uppercase(& mut text);
   println!(" The data : {}  and length {}", text, length);
+
+  // Slice  
 }
 
 #[allow(dead_code)]

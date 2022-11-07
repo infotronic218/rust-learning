@@ -5,6 +5,9 @@ mod array ;
 mod factorial ;
 mod ownership ;
 mod borrow ;
+mod stdlib ;
+mod ios ;
+mod files ;
 
 fn main() {
   //formating::main();
@@ -13,7 +16,10 @@ fn main() {
   //array::main() ;
   //factorial::main() ;
   // ownership::main();
-  borrow::main();
+  //borrow::main();
+  //stdlib::main();
+  //ios::main();
+  files::main();
 }
 
 
