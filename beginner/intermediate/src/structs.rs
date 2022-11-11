@@ -1,5 +1,5 @@
 #[allow(dead_code)]
-
+#[derive(PartialEq,PartialOrd)]
 struct Person {
     name: String,
     height:f64,
@@ -25,9 +25,25 @@ impl Person{
 
 // Generic dataype
 struct Rectangle<T>{
-    width:T,
-    height:T
+  width:T,
+  height:T
 }
+
+// define trait 
+
+trait Description{
+  fn describe(&self)->String;
+
+}
+
+impl Description for Person{
+  fn describe(&self)->String{
+    return format!("Name : {} ; Age : {}; Heiht : {}", self.name, self.age, self.height);
+  }
+}
+
+
+
 
 pub fn main(){
   let mut p1 = Person{
@@ -57,4 +73,10 @@ pub fn main(){
   };
 
   println!("The data content is :W= {} ,H ={}", rect.width, rect.height);
+  //print value 
+  println!("Person : {} ", p1.describe());
+  println!("Comparing {}",(p1==p2));
+  println!("Comparing {}",(p1>p2));
+
+
 }
