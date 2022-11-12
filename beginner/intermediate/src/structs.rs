@@ -44,7 +44,7 @@ impl Description for Person{
 
 
 
-
+#[allow(dead_code)]
 pub fn main(){
   let mut p1 = Person{
     name:String::from("Ousseni"),
